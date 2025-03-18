@@ -17,4 +17,4 @@ In this set, we will insert the values 10, 20, 30, 15, 25, 5, 35, 27 sequentiall
 8. Insert 27, balance Factor of 30 = 1 (Left-heavy), No rotation needed
 
 
-<img src=[https://github.com/Arflores98/3013-Algorithms/blob/main/Assignments/H01/AVL.drawio.png]>
+<img src=https://github.com/Arflores98/3013-Algorithms/blob/main/Assignments/H01/AVL.drawio.png>
