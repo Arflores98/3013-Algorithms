@@ -4,7 +4,7 @@ In this set, we will insert the values 10, 20, 30, 15, 25, 5, 35, 27 sequentiall
 
 |#|File|Description|
 |---|---|---|
-|1| [Set 1 Graph](Assignments/H01/AVL.drawio.png) |Set 1: AVL Graph|
+|1| [Set 1 Graph](Assignments/H01/AVL.drawio (1).png) |Set 1: AVL Graph|
 
 ### Steps
 1. Insert 10
