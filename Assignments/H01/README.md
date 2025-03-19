@@ -1,5 +1,5 @@
 # H01 - AVL Tree Graphs
-## Set 1:
+## Set 1: Left-Right and Right-Left Rotations
 ### Description:
 In this set, we will insert the values 10, 20, 30, 15, 25, 5, 35, 27 sequentially into an AVL Tree and perform rotations when necessary to maintain balance. We will identify where single rotations (LL or RR) and double rotations (LR or RL) occur.
 
@@ -10,8 +10,8 @@ In this set, we will insert the values 10, 20, 30, 15, 25, 5, 35, 27 sequentiall
 ### Steps
 1. Insert 10
 2. Insert 20, balance Factor of 10 = -1 (Right-heavy), No rotation needed
-3. Insert 30, balance Factor of 10 = -2 (Right-heavy),
-   * Balance Factor of 20 = -1 (Right-heavy),
+3. Insert 30, balance Factor of 20 = -1 (Right-heavy),
+   * Balance Factor of 10 = -2 (Right-heavy),
    * RR imbalance, Left Rotation on 10
 5. Insert 15, balance Factor of 20 = 1 (Left-heavy), No rotation needed
 6. Insert 25, balance Factor of 30 = 1 (Left-heavy), No rotation needed
@@ -23,6 +23,14 @@ In this set, we will insert the values 10, 20, 30, 15, 25, 5, 35, 27 sequentiall
 
 <img src=https://github.com/Arflores98/3013-Algorithms/blob/main/Assignments/H01/AVL.drawio.png>
 
-## Set 2:
+## Set 2: Multiple Rotations in Different Branches
 ### Description:
 In this set, we will insert the values 50, 40, 45, 60, 55, 70, 35, 30, 65, 75, 43 sequentially into an AVL Tree and perform rotations when necessary to maintain balance. We will identify where single rotations (LL or RR) and double rotations (LR or RL) occur.
+
+### Steps
+1. Insert 50
+2. Insert 40, balance factor of 50 = 1 (Left-heavy), No rotation needed
+3. Insert 45, balance factor of 40 = -1 (Right-heavy),
+   * Balance factor of 50 = 2 (Left-heavy),
+   * LR imbalance, Left-Right Rotation after inserting 45
+4. Insert 60, balance factor of 50 = -1,
