@@ -20,7 +20,7 @@ Open Hashing:
 |Handling Collisions|Searches for an open slot in the table|Stores multiple elements at the same index|
 |Performance at High Load|Degrades significantley (~70% full or more)|Stays efficient|
 |Memory Usage|Uses only array (compact)|Requires extra memory for chains|
-|Storage Method|Stores everything in the main table|Uses Linked lists (or BST) at each index)|
+|Storage Method|Stores everything in the main table|Uses Linked lists (or BST) at each index|
 |Best for|Low-load tables, fast lookups|Large datasets, frequent inserts/deletes|
 
 ## 2. Collision Resolution Techniques
