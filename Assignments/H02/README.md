@@ -43,3 +43,10 @@ Open Hashing:
  * The table slots doesn't impose a *hard limit* on the number of elements - only memory constraints do.
 
 ### What is the worst performance (big oh) for each type of collision resolution technique?
+|Collision Resolution|Worst-time Complexity|Reason|Best when|
+|---|---|---|---|
+|Seperate Chaining (Linked List)|O(n)|All keys hash to the same bucket, forming a long chain|The hash function distributes keys well, keeping chains short|
+|Seperate Chaining (BST)|O(log n)|A balanced BST is used instead of linked lists|"|
+|Linear Probing|O(n)|Primary clsutering causes long search sequences|The table is kept less than 70% full to minimize clustering|
+|Quadratic Probing|O(n)|Secondary clustering increases search time|A prime-sized table and a good hash function are used to reduce clustering|
+|Double Hashing|O(n)|Poor secondary hash function can still lead to long searches|A good secondary hash function is used to minimize clustering|
