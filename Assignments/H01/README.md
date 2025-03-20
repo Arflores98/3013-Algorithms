@@ -28,9 +28,6 @@ In this set, we will insert the values 10, 20, 30, 15, 25, 5, 35, 27 sequentiall
 In this set, we will insert the values 50, 40, 45, 60, 55, 70, 35, 30, 65, 75, 43 sequentially into an AVL Tree and perform rotations when necessary to maintain balance. We will identify where single rotations (LL or RR) and double rotations (LR or RL) occur.
 
 ### Steps
-1. Insert 50
-2. Insert 40, balance factor of 50 = 1 (Left-heavy), No rotation needed
-3. Insert 45, balance factor of 40 = -1 (Right-heavy),
-   * Balance factor of 50 = 2 (Left-heavy),
-   * LR imbalance, Left-Right Rotation after inserting 45
-4. Insert 60, balance factor of 50 = -1,
+Steps are in the diagrams below
+
+<img scr= >
