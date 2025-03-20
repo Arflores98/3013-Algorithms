@@ -22,3 +22,24 @@ Open Hashing:
 |Memory Usage|Uses only array (compact)|Requires extra memory for chains|
 |Storage Method|Stores everything in the main table|Uses Linked lists (or BST) at each index)|
 |Best for|Low-load tables, fast lookups|Large datasets, frequent inserts/deletes|
+
+## 2. Collision Resolution Techniques
+### Briefly describe at least two methods for resolving collisions in open addressing (e.g., linear probing, quadratic probing, double hashing).
+1. **Linear Probing:** If collision occurs, check for the next available slot sequentially
+2. **Quadratic Probing:** Uses a quadratic function (e.g. 1<sup>2</sup>, 2<sup>2</sup>, 3<sup>2</sup>, etc.) to find the next available slot.
+
+### Explain the pros and cons of each method.
+1. **Linear Probing**
+   * Pros: Simple implementation, cache friendly.
+   * Cons: Causes primary clustering (long groups of occupied slots), which slows down searches.
+2. **Quadratic Probing**
+   * Pros: Reduces clustering compared to Linear Probing.
+   * Cons: Still susceptible to secondary clustering.
+
+### Which collision resolution technique can handle more values than table slots. Explain.
+**Chaining (Seperate Chaining - Closed Addressing)** Why?
+ * It can handle more values than the number of table slots because it allows multiple elements to be stored at the same index using linked lists (or other data structures)
+ * Since LL are *dynamically allocated*, they can grow as needed without being restricted by the number of table slots
+ * The table slots doesn't impose a *hard limit* on the number of elements - only memory constraints do.
+
+### What is the worst performance (big oh) for each type of collision resolution technique?
