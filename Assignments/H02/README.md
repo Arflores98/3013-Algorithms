@@ -50,3 +50,23 @@ Open Hashing:
 |Linear Probing|O(n)|Primary clsutering causes long search sequences|The table is kept less than 70% full to minimize clustering|
 |Quadratic Probing|O(n)|Secondary clustering increases search time|A prime-sized table and a good hash function are used to reduce clustering|
 |Double Hashing|O(n)|Poor secondary hash function can still lead to long searches|A good secondary hash function is used to minimize clustering|
+
+## 3. Impact of Hash Table Size
+The size determines how well the keys are distributed across the table. A *well-chosen* table size reduces collsions and improves performance, while a *poorly-chosen* table size can lead to clustering and inefficient lookups.
+### How does the choice of table size affect the distribution of keys?
+1. **Prime Number Table Size -> Better Distributions**
+   * When the table size is a prime number, the hash function spreads keys more evenly, reducing clustering.
+   * This is because **modulo operations** (`key % table_size`) distribute keys more uniformly when `table_size` has fewer divisors.
+2. **Non-Prime Table Sizes -> Increased Collisions**
+   * If the table has many factors, keys tend to collide more often because `key % table_size` maps multiple keys to the same few indices.
+
+### What are the pitfalls of using a poor table size (for example, a table size that is a round number or a power of 2)?
+1. **Power of 2 Table Size** (e.g., 16, 32, 64, etc.) **-> Poor Distribution**
+   * Issue: The modulo (`key % table_size`) **ignores higher-order bits** of the key, leading to clustering.
+   * Ex. Suppose `table_size = 16 (2^4)`. If keys are multiple of 16, they will all hash to index 0, causing clustering. Because `x % 16` will always be 0 for multiples of 16.
+2. **Round Numbers (e.g., 100, 200, 500) -> Skewed Hashing**
+   * Issue: Many real-world keys (ex. timestamps, IDs, generated numbers) follow patterns that align with round numbers
+   * Ex. If a hash table is size 100, keys that are multiples of 100 will hash index 0, leading to clustering
+   * Many poor hash functions also amplify this issue by producing periodic hash values.
+  
+## Part B: Simulation and Diagram Exercises
