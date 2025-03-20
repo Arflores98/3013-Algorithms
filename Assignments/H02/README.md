@@ -1,5 +1,5 @@
 # H02 Hashing - Ashley Flores
-## Part A: Conceptual Questions:
+# Part A: Conceptual Questions:
 ## 1. Defining Hashing and Collision Resolution
 ### What is a hash table and why is collision resolution necessary?
   * A hash table is a data structure that stores key-value pairs and provides efficient lookup, insertion, and deletion operations. It uses a hash function to map keys to indices in an array, where the corresponding values are stored. Ideally, this allows for O(1) average-time complexity for these operations.
@@ -69,4 +69,4 @@ The size determines how well the keys are distributed across the table. A *well-
    * Ex. If a hash table is size 100, keys that are multiples of 100 will hash index 0, leading to clustering
    * Many poor hash functions also amplify this issue by producing periodic hash values.
   
-## Part B: Simulation and Diagram Exercises
+# Part B: Simulation and Diagram Exercises
