@@ -6,6 +6,7 @@ In this set, we will insert the values 10, 20, 30, 15, 25, 5, 35, 27 sequentiall
 |#|File|Description|
 |---|---|---|
 |1| [Set 1 Graph](Assignments/H01/AVL.drawio.png) |Set 1: AVL Graph|
+|2| [Set 2 Graph](Assignments/H01/AVL2.drawio.png) |Set 2: AVL Graph|
 
 ### Steps
 1. Insert 10
@@ -30,4 +31,4 @@ In this set, we will insert the values 50, 40, 45, 60, 55, 70, 35, 30, 65, 75, 4
 ### Steps
 Steps are in the diagrams below
 
-<img scr= >
+<img src=https://github.com/Arflores98/3013-Algorithms/blob/main/Assignments/H01/AVL2.drawio.png>
